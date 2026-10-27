@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishavasya Upanishad Study Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter and Noto Serif Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        slateDark: '#1e293b',
+                        warmBg: '#fcfbf9'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        devanagari: ['Noto Serif Devanagari', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sanskrit-font {
+            font-family: 'Noto Serif Devanagari', serif;
+        }
+    </style>
+</head>
+<body class="bg-warmBg text-slateDark antialiased selection:bg-saffron-100 selection:text-saffron-700">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full bg-saffron-100 border border-saffron-500 flex items-center justify-center text-saffron-700 font-bold text-lg shadow-inner">
+                    ॐ
+                </div>
+                <div>
+                    <span class="font-bold text-lg sm:text-xl tracking-tight text-slateDark block leading-none">Ishavasya</span>
+                    <span class="text-xs text-saffron-700 font-medium tracking-widest uppercase">Upanishad Portal</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#hero" class="hover:text-saffron-600 transition-colors">Home</a>
+                <a href="#mantra1" class="hover:text-saffron-600 transition-colors">Featured Mantra</a>
+                <a href="#themes" class="hover:text-saffron-600 transition-colors">Core Themes</a>
+                <a href="#curriculum" class="hover:text-saffron-600 transition-colors">Modules</a>
+                <a href="#resources" class="hover:text-saffron-600 transition-colors">Resources</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#curriculum" class="hidden sm:inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-saffron-600 hover:bg-saffron-700 transition-all transform hover:-translate-y-0.5">
+                    Start Learning
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" aria-label="Toggle menu" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-amber-50 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-4 space-y-2">
+            <a href="#hero" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50">Home</a>
+            <a href="#mantra1" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50">Featured Mantra</a>
+            <a href="#themes" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50">Core Themes</a>
+            <a href="#curriculum" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50">Modules</a>
+            <a href="#resources" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-amber-50">Resources</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative overflow-hidden pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gradient-to-b from-amber-50/50 via-warmBg to-warmBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-saffron-100 border border-saffron-200 text-saffron-700 text-xs font-semibold uppercase tracking-wider mb-6 shadow-sm">
+                <span>Shukla Yajurveda Samhita • Chapter 40</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slateDark tracking-tight mb-6">
+                Ishavasya <span class="text-saffron-600">Upanishad</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-600 font-light max-w-3xl mx-auto mb-10 leading-relaxed">
+                Realizing Oneness in Action and Wisdom
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#mantra1" class="w-full sm:w-auto px-8 py-3.5 border border-transparent text-base font-medium rounded-xl text-white bg-saffron-600 hover:bg-saffron-700 shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                    Explore Mantra 1
+                </a>
+                <a href="#curriculum" class="w-full sm:w-auto px-8 py-3.5 border border-amber-300 text-base font-medium rounded-xl text-slate-700 bg-white hover:bg-amber-50 shadow-sm transition-all">
+                    View Modules
+                </a>
+            </div>
+        </div>
+        <!-- Decorative subtle accent shape -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-saffron-100/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    </section>
+
+    <!-- Featured Mantra 1 Section -->
+    <section id="mantra1" class="py-16 bg-white border-y border-amber-100 shadow-inner">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-xs font-bold text-saffron-600 uppercase tracking-widest mb-2">Foundational Verse</h2>
+                <h3 class="text-3xl font-bold text-slateDark">Mantra 1 Spotlight</h3>
+            </div>
+            
+            <div class="bg-gradient-to-br from-amber-50/70 to-white border border-amber-200 rounded-2xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-6 opacity-10 text-saffron-700 font-serif text-8xl select-none pointer-events-none">ॐ</div>
+                
+                <!-- Devanagari Script -->
+                <div class="text-center mb-6">
+                    <p class="sanskrit-font text-2xl sm:text-3xl lg:text-4xl text-slateDark leading-relaxed mb-2">
+                        ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् |
+                    </p>
+                    <p class="sanskrit-font text-2xl sm:text-3xl lg:text-4xl text-slateDark leading-relaxed">
+                        तेन त्यक्तेन भुञ्जीथा मा गृधः कस्य स्विद्धनम् || १ ||
+                    </p>
+                </div>
+
+                <!-- Transliteration -->
+                <div class="text-center mb-8 italic text-slate-600 text-sm sm:text-base">
+                    īśāvāsyamidaṃ sarvaṃ yatkiñca jagatyāṃ jagat |<br>
+                    tena tyaktena bhuñjīthā mā gṛdhaḥ kasya sviddhanam || 1 ||
+                </div>
+
+                <!-- Translation & Meaning -->
+                <div class="border-t border-amber-200/60 pt-6 mt-6">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">Translation</h4>
+                    <p class="text-slate-700 text-base sm:text-lg leading-relaxed mb-4">
+                        "All this—whatever moves or is changeful in this universe—is pervaded by the Supreme Lord. Protect yourself and enjoy through the spirit of detachment; do not covet anyone’s wealth."
+                    </p>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">Core Lesson</h4>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        True freedom is found not in running away from the world, but in recognizing the divine presence in all things while maintaining inner non-attachment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Philosophical Themes Section -->
+    <section id="themes" class="py-20 bg-warmBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-saffron-600 uppercase tracking-widest mb-2">Wisdom & Doctrine</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-slateDark mb-4">Key Philosophical Themes</h3>
+                <p class="text-slate-600 text-base sm:text-lg">Explore the central dialectics and profound realizations embedded across the 18 mantras.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Theme 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-amber-100 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-saffron-600 font-bold text-xl mb-6">
+                            1
+                        </div>
+                        <h4 class="text-xl font-bold text-slateDark mb-3">Divine Pervasiveness</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Recognizing that the universe is not separate from the Divine. When you view the world through this lens, every action becomes sacred duty and service.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-saffron-600 uppercase tracking-wider">
+                        Ishavasya Concept
+                    </div>
+                </div>
+
+                <!-- Theme 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-amber-100 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-saffron-600 font-bold text-xl mb-6">
+                            2
+                        </div>
+                        <h4 class="text-xl font-bold text-slateDark mb-3">Enjoyment Through Renunciation</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Living fully in the material world without psychological attachment or greed. True fulfillment stems from detachment and inner freedom rather than ownership.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-saffron-600 uppercase tracking-wider">
+                        Tena Tyaktena
+                    </div>
+                </div>
+
+                <!-- Theme 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-amber-100 shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-saffron-600 font-bold text-xl mb-6">
+                            3
+                        </div>
+                        <h4 class="text-xl font-bold text-slateDark mb-3">Knowledge & Action</h4>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                            Reconciling empirical science (<span class="italic">Avidya</span>) with spiritual wisdom (<span class="italic">Vidya</span>) to achieve complete harmony of outer action and inner realization.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-saffron-600 uppercase tracking-wider">
+                        Vidya & Avidya
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Navigation Section (Modules) -->
+    <section id="curriculum" class="py-20 bg-white border-t border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-saffron-600 uppercase tracking-widest mb-2">Study Curriculum</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-slateDark mb-4">Course Navigation</h3>
+                <p class="text-slate-600 text-base sm:text-lg">Structured learning paths divided into four progressive modules covering all 18 mantras.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Module 1 -->
+                <a href="module-1.html" class="block bg-warmBg border border-amber-200/80 rounded-2xl p-6 sm:p-8 hover:border-saffron-500 transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-600">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-saffron-100 text-saffron-700 text-xs font-bold rounded-full uppercase tracking-wider">Module 1</span>
+                        <span class="text-slate-400 text-sm font-medium">Mantras 1–3</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slateDark mb-2">Life in the World & Divine Pervasiveness</h4>
+                    <p class="text-slate-600 text-sm sm:text-base mb-6 leading-relaxed">
+                        Establishing divine pervasiveness, duty, non-attachment, and the consequences of ignoring inner truth.
+                    </p>
+                    <div class="flex items-center text-saffron-600 font-semibold text-sm hover:text-saffron-700">
+                        <span>Explore Module</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+
+                <!-- Module 2 -->
+                <a href="module-2.html" class="block bg-warmBg border border-amber-200/80 rounded-2xl p-6 sm:p-8 hover:border-saffron-500 transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-600">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-saffron-100 text-saffron-700 text-xs font-bold rounded-full uppercase tracking-wider">Module 2</span>
+                        <span class="text-slate-400 text-sm font-medium">Mantras 4–8</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slateDark mb-2">The Nature of the Self (Atman)</h4>
+                    <p class="text-slate-600 text-sm sm:text-base mb-6 leading-relaxed">
+                        Exploring the paradoxes of the unmoving yet swift Atman and how realizing unity destroys sorrow and delusion.
+                    </p>
+                    <div class="flex items-center text-saffron-600 font-semibold text-sm hover:text-saffron-700">
+                        <span>Explore Module</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+
+                <!-- Module 3 -->
+                <a href="module-3.html" class="block bg-warmBg border border-amber-200/80 rounded-2xl p-6 sm:p-8 hover:border-saffron-500 transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-600">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-saffron-100 text-saffron-700 text-xs font-bold rounded-full uppercase tracking-wider">Module 3</span>
+                        <span class="text-slate-400 text-sm font-medium">Mantras 9–14</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slateDark mb-2">The Harmony of Opposites</h4>
+                    <p class="text-slate-600 text-sm sm:text-base mb-6 leading-relaxed">
+                        Reconciling action (<span class="italic">Karma</span>) and knowledge (<span class="italic">Vidya</span>), manifest and unmanifest reality.
+                    </p>
+                    <div class="flex items-center text-saffron-600 font-semibold text-sm hover:text-saffron-700">
+                        <span>Explore Module</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+
+                <!-- Module 4 -->
+                <a href="module-4.html" class="block bg-warmBg border border-amber-200/80 rounded-2xl p-6 sm:p-8 hover:border-saffron-500 transition-all shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-saffron-600">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-saffron-100 text-saffron-700 text-xs font-bold rounded-full uppercase tracking-wider">Module 4</span>
+                        <span class="text-slate-400 text-sm font-medium">Mantras 15–18</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-slateDark mb-2">Prayers for Liberation</h4>
+                    <p class="text-slate-600 text-sm sm:text-base mb-6 leading-relaxed">
+                        The golden vessel hiding the truth (<span class="italic">Hiranmayena Patrena</span>) and final Vedic invocations for grace.
+                    </p>
+                    <div class="flex items-center text-saffron-600 font-semibold text-sm hover:text-saffron-700">
+                        <span>Explore Module</span>
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-amber-50/40 border-t border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold text-saffron-600 uppercase tracking-widest mb-2">Study Aids</h2>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slateDark mb-6">Additional Study Resources</h3>
+            <p class="text-slate-600 max-w-2xl mx-auto mb-8 text-sm sm:text-base">
+                Download complete Sanskrit texts with word-by-word Anvaya breakdowns, audio recitations, and assessment quizzes.
+            </p>
+            <div class="inline-flex flex-wrap justify-center gap-4">
+                <a href="#resources" class="px-6 py-3 bg-white border border-amber-200 rounded-xl text-slate-700 font-medium text-sm hover:bg-amber-50 shadow-sm transition-all">
+                    📄 Download Study PDF
+                </a>
+                <a href="#resources" class="px-6 py-3 bg-white border border-amber-200 rounded-xl text-slate-700 font-medium text-sm hover:bg-amber-50 shadow-sm transition-all">
+                    🎧 Audio Chanting Guide
+                </a>
+                <a href="#resources" class="px-6 py-3 bg-white border border-amber-200 rounded-xl text-slate-700 font-medium text-sm hover:bg-amber-50 shadow-sm transition-all">
+                    📝 Self-Assessment Quizzes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slateDark text-slate-300 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-saffron-600 flex items-center justify-center text-white font-bold text-sm">
+                    ॐ
+                </div>
+                <span class="font-bold text-white tracking-tight">Ishavasya Upanishad Study Portal</span>
+            </div>
+            <p class="text-xs text-slate-400 text-center md:text-left">
+                Dedicated to the timeless study and contemplation of Vedantic wisdom. Free and open educational resource.
+            </p>
+            <div class="flex space-x-6 text-sm text-slate-400">
+                <a href="#hero" class="hover:text-saffron-500 transition-colors">Privacy</a>
+                <a href="#hero" class="hover:text-saffron-500 transition-colors">Terms</a>
+                <a href="#hero" class="hover:text-saffron-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

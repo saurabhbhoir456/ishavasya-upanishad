@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishavasya Upanishad — Module 1 (Mantras 1–3)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter and Noto Serif Devanagari -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        saffron: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        slateDark: '#1e293b',
+                        warmBg: '#fcfbf9'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        devanagari: ['Noto Serif Devanagari', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+        .font-devanagari {
+            font-family: 'Noto Serif Devanagari', serif;
+        }
+        .sanskrit-font {
+            font-family: 'Noto Serif Devanagari', serif;
+        }
+    </style>
+</head>
+<body class="bg-amber-50/30 text-stone-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white border-b border-amber-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="w-8 h-8 rounded bg-violet-600 flex items-center justify-center text-white text-sm" aria-label="Back to home">
+                    ॐ
+                </a>
+                <div>
+                    <a href="index.html" class="font-cinzel font-bold text-stone-900 text-lg leading-none hover:text-amber-800">ISHAVASYA</a>
+                    <span class="text-xs tracking-wider text-amber-700 font-medium uppercase">Module 1 • Mantras 1–3</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-5 text-sm font-medium text-stone-600">
+                <a href="index.html" class="hover:text-amber-800 transition">← Back to Home</a>
+                <a href="#overview" class="hover:text-amber-800 transition">Overview</a>
+                <a href="#mantra1" class="hover:text-amber-800 transition">Verses 1–3</a>
+                <a href="#commentary" class="hover:text-amber-800 transition">Philosophical Depth</a>
+                <a href="#quiz" class="hover:text-amber-800 transition">Practice Quiz</a>
+            </nav>
+            <a href="#quiz" class="hidden md:inline-flex bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-sm">
+                Take Quiz
+            </a>
+            <button id="menu-btn" type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-stone-700 hover:bg-amber-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-700" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden border-t border-amber-100 bg-white px-4 py-3 space-y-1" aria-label="Mobile navigation">
+            <a href="index.html" class="block rounded-md px-3 py-2 text-sm font-medium text-stone-700 hover:bg-amber-50">← Back to Home</a>
+            <a href="#overview" class="block rounded-md px-3 py-2 text-sm font-medium text-stone-700 hover:bg-amber-50">Overview</a>
+            <a href="#mantra1" class="block rounded-md px-3 py-2 text-sm font-medium text-stone-700 hover:bg-amber-50">Verses 1–3</a>
+            <a href="#commentary" class="block rounded-md px-3 py-2 text-sm font-medium text-stone-700 hover:bg-amber-50">Philosophical Depth</a>
+            <a href="#quiz" class="block rounded-md px-3 py-2 text-sm font-medium text-stone-700 hover:bg-amber-50">Practice Quiz</a>
+        </nav>
+    </header>
+
+    <!-- Module Header Banner -->
+    <section id="overview" class="max-w-4xl mx-auto w-full px-4 pt-8">
+        <div class="bg-gradient-to-br from-amber-900 to-stone-900 text-amber-50 rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+            <div class="absolute right-0 top-0 translate-x-8 -translate-y-8 text-white/5 font-devanagari text-9xl pointer-events-none select-none">ॐ</div>
+            <div class="relative z-10 space-y-4">
+                <span class="inline-block bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest border border-amber-400/30">
+                    Module 1 • Life in the World & Divine Pervasiveness
+                </span>
+                <h1 class="font-cinzel text-3xl md:text-5xl font-bold tracking-tight text-white">Mantras 1 to 3 Breakdown</h1>
+                <p class="text-amber-100/90 text-base md:text-lg leading-relaxed max-w-2xl font-light">
+                    Examining the foundational principles of divine pervasiveness, purposeful worldly action through non-attachment, and the peril of spiritual ignorance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-10 w-full space-y-8">
+
+        <!-- Mantra 1 Section -->
+        <section id="mantra1" class="bg-white rounded-xl border border-amber-200/60 p-6 md:p-8 shadow-sm space-y-6">
+            
+            <div class="flex items-center justify-between mb-6 border-b border-amber-100 pb-4">
+                <h2 class="font-cinzel text-xl font-bold text-slateDark flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-saffron-100 text-saffron-700 text-sm flex items-center justify-center mr-3 font-bold">1</span>
+                    Mantra 1: Divine Pervasiveness & Detachment
+                </h2>
+                <span class="text-xs font-semibold px-2.5 py-1 bg-amber-50 text-saffron-700 rounded-md border border-amber-200">Verse 1 of 18</span>
+            </div>
+
+            <!-- Sanskrit Verse -->
+            <div class="text-center bg-amber-50/40 p-6 rounded-xl border border-amber-100 mb-6">
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed mb-2">
+                    ईशावास्यमिदं सर्वं यत्किञ्च जगत्यां जगत् |
+                </p>
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed">
+                    तेन त्यक्तेन भुञ्जीथा मा गृधः कस्य स्विद्धनम् || १ ||
+                </p>
+            </div>
+
+            <!-- Transliteration -->
+            <div class="text-center mb-8 italic text-slate-600 text-sm sm:text-base">
+                īśāvāsyamidaṃ sarvaṃ yatkiñca jagatyāṃ jagat |<br>
+                tena tyaktena bhuñjīthā mā gṛdhaḥ kasya sviddhanam || 1 ||
+            </div>
+
+            <!-- Tabs for Anvaya, Translation, Commentary -->
+            <div class="space-y-6">
+                <!-- Anvaya / Word Meaning -->
+                <div class="bg-warmBg p-5 rounded-xl border border-amber-100">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-3">Word-by-Word Meaning (Anvaya)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                        <div><strong class="text-slateDark">Īśā avāsyam:</strong> Pervaded by the Lord</div>
+                        <div><strong class="text-slateDark">idam sarvam:</strong> All this (universe)</div>
+                        <div><strong class="text-slateDark">yat kiñca:</strong> Whatever</div>
+                        <div><strong class="text-slateDark">jagatyām jagat:</strong> Moving in this changing world</div>
+                        <div><strong class="text-slateDark">tena tyaktena:</strong> Through that renunciation (detachment)</div>
+                        <div><strong class="text-slateDark">bhuñjīthāḥ:</strong> Protect/enjoy yourself</div>
+                        <div><strong class="text-slateDark">mā gṛdhaḥ:</strong> Do not covet</div>
+                        <div><strong class="text-slateDark">kasya svid dhanam:</strong> Whose is wealth? (Whose property is it anyway?)</div>
+                    </div>
+                </div>
+
+                <!-- Translation -->
+                <div class="p-5 rounded-xl border border-amber-100 bg-white">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">English Translation</h3>
+                    <p class="text-slate-700 text-base leading-relaxed">
+                        "All this—whatever moves or is changeful in this universe—is pervaded by the Supreme Lord. Protect yourself and enjoy through the spirit of detachment; do not covet anyone’s wealth."
+                    </p>
+                </div>
+
+                <!-- Commentary -->
+                <div id="commentary" class="p-5 rounded-xl border border-amber-100 bg-amber-50/20">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">Philosophical Commentary</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        This opening verse sets the tone for the entire Upanishad. It eliminates the division between the sacred and the secular. Because the Divine envelops everything, no object or being is profane. <span class="italic">Tena tyaktena bhuñjīthā</span> instructs us to experience life not through greedy appropriation or possessiveness, but through joyful detachment—recognizing that nothing truly belongs to the ego.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mantra 2 Section -->
+        <section id="mantra2" class="bg-white rounded-xl border border-amber-200/60 p-6 md:p-8 shadow-sm space-y-6">
+            
+            <div class="flex items-center justify-between mb-6 border-b border-amber-100 pb-4">
+                <h2 class="font-cinzel text-xl font-bold text-slateDark flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-saffron-100 text-saffron-700 text-sm flex items-center justify-center mr-3 font-bold">2</span>
+                    Mantra 2: The Path of Action & Duty
+                </h2>
+                <span class="text-xs font-semibold px-2.5 py-1 bg-amber-50 text-saffron-700 rounded-md border border-amber-200">Verse 2 of 18</span>
+            </div>
+
+            <!-- Sanskrit Verse -->
+            <div class="text-center bg-amber-50/40 p-6 rounded-xl border border-amber-100 mb-6">
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed mb-2">
+                    कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः |
+                </p>
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed">
+                    एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे || २ ||
+                </p>
+            </div>
+
+            <!-- Transliteration -->
+            <div class="text-center mb-8 italic text-slate-600 text-sm sm:text-base">
+                kurvanneveha karmāṇi jijīviṣecchataṃ samāḥ |<br>
+                evaṃ tvayi nānyatheto'sti na karma lipyate nare || 2 ||
+            </div>
+
+            <!-- Content Blocks -->
+            <div class="space-y-6">
+                <!-- Anvaya -->
+                <div class="bg-warmBg p-5 rounded-xl border border-amber-100">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-3">Word-by-Word Meaning (Anvaya)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                        <div><strong class="text-slateDark">Kurvan eva iha:</strong> Performing actions indeed here</div>
+                        <div><strong class="text-slateDark">karmāṇi:</strong> Duties / works</div>
+                        <div><strong class="text-slateDark">jijīviṣet:</strong> One should wish to live</div>
+                        <div><strong class="text-slateDark">śatam samāḥ:</strong> A hundred years</div>
+                        <div><strong class="text-slateDark">evam tvayi:</strong> Thus it is for you</div>
+                        <div><strong class="text-slateDark">na anyathā itaḥ asti:</strong> There is no other way than this</div>
+                        <div><strong class="text-slateDark">na karma lipyate nare:</strong> Action does not cling to man</div>
+                    </div>
+                </div>
+
+                <!-- Translation -->
+                <div class="p-5 rounded-xl border border-amber-100 bg-white">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">English Translation</h3>
+                    <p class="text-slate-700 text-base leading-relaxed">
+                        "Performing indeed works here [in this world], one should wish to live a hundred years. Thus it is for you, not otherwise; action does not cling to man."
+                    </p>
+                </div>
+
+                <!-- Commentary -->
+                <div class="p-5 rounded-xl border border-amber-100 bg-amber-50/20">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">Philosophical Commentary</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        This verse directly addresses the dilemma of whether a spiritual seeker should abandon worldly life. The Upanishad emphatically states that one should desire to live a full life span performing righteous duties (<span class="italic">Karma</span>). When actions are performed without egoistic attachment and with the awareness of divine pervasiveness (Mantra 1), the binding karma (<span class="italic">Karma Lipyate</span>) does not stain the individual.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mantra 3 Section -->
+        <section id="mantra3" class="bg-white rounded-xl border border-amber-200/60 p-6 md:p-8 shadow-sm space-y-6">
+            
+            <div class="flex items-center justify-between mb-6 border-b border-amber-100 pb-4">
+                <h2 class="font-cinzel text-xl font-bold text-slateDark flex items-center">
+                    <span class="w-8 h-8 rounded-lg bg-saffron-100 text-saffron-700 text-sm flex items-center justify-center mr-3 font-bold">3</span>
+                    Mantra 3: The Peril of Spiritual Blindness
+                </h2>
+                <span class="text-xs font-semibold px-2.5 py-1 bg-amber-50 text-saffron-700 rounded-md border border-amber-200">Verse 3 of 18</span>
+            </div>
+
+            <!-- Sanskrit Verse -->
+            <div class="text-center bg-amber-50/40 p-6 rounded-xl border border-amber-100 mb-6">
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed mb-2">
+                    असुर्या नाम ते लोका अन्धेन तमसाऽऽवृताः |
+                </p>
+                <p class="sanskrit-font text-2xl sm:text-3xl text-slateDark leading-relaxed">
+                    ताँस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः || ३ ||
+                </p>
+            </div>
+
+            <!-- Transliteration -->
+            <div class="text-center mb-8 italic text-slate-600 text-sm sm:text-base">
+                asuryā nāma te lokā andhena tamasā'vṛtāḥ |<br>
+                tāṃste pretyābhigacchanti ye ke cātmahano janāḥ || 3 ||
+            </div>
+
+            <!-- Content Blocks -->
+            <div class="space-y-6">
+                <!-- Anvaya -->
+                <div class="bg-warmBg p-5 rounded-xl border border-amber-100">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-3">Word-by-Word Meaning (Anvaya)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700">
+                        <div><strong class="text-slateDark">Asuryāḥ nāma:</strong> Demoniac / sunless</div>
+                        <div><strong class="text-slateDark">te lokāḥ:</strong> Those worlds</div>
+                        <div><strong class="text-slateDark">andhena tamasā āvṛtāḥ:</strong> Covered by blinding darkness</div>
+                        <div><strong class="text-slateDark">tān te pretya:</strong> To those worlds they, after death, go</div>
+                        <div><strong class="text-slateDark">abhigacchanti:</strong> Go / reach</div>
+                        <div><strong class="text-slateDark">ye ke ca:</strong> Whosoever</div>
+                        <div><strong class="text-slateDark">ātmahano janāḥ:</strong> Those people who are killers of the Self (ignorant of true nature)</div>
+                    </div>
+                </div>
+
+                <!-- Translation -->
+                <div class="p-5 rounded-xl border border-amber-100 bg-white">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">English Translation</h3>
+                    <p class="text-slate-700 text-base leading-relaxed">
+                        "Sunless [demoniac] are those worlds, covered by blinding darkness. To those worlds go after death all those people who are slayers of the Self."
+                    </p>
+                </div>
+
+                <!-- Commentary -->
+                <div class="p-5 rounded-xl border border-amber-100 bg-amber-50/20">
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-saffron-700 mb-2">Philosophical Commentary</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Who are the <span class="italic">ātmahanas</span> (slayers of the Self)? They are not murderers of physical bodies, but those who live in complete ignorance of their true spiritual nature—identifying solely with the transient body and ego. Ignoring the divine reality described in Mantra 1 leads to psychological bondage and spiritual darkness, symbolized here as sunless demoniac worlds.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Practice Quiz Section -->
+        <section id="quiz" class="bg-white border border-amber-200 rounded-2xl p-8 shadow-sm space-y-6">
+            <div class="text-center mb-8">
+                <span class="px-3 py-1 bg-saffron-100 text-saffron-700 text-xs font-bold rounded-full uppercase tracking-wider">Module 1 Assessment</span>
+                <h2 class="font-cinzel text-2xl sm:text-3xl font-bold text-slateDark mt-2">Practice Quiz: Mantras 1–3</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-1">Test your understanding of the foundational concepts studied in Module 1.</p>
+            </div>
+
+            <form id="quiz-form" class="space-y-8">
+                
+                <!-- Question 1 -->
+                <div class="p-5 bg-warmBg rounded-xl border border-amber-100 space-y-3">
+                    <h3 class="font-bold text-slateDark text-base">1. According to Mantra 1, what permeates the entire universe?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q1" value="a" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Material wealth and gold</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q1" value="b" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>The Supreme Lord (Divine Consciousness)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q1" value="c" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Sensory illusions only</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="p-5 bg-warmBg rounded-xl border border-amber-100 space-y-3">
+                    <h3 class="font-bold text-slateDark text-base">2. What does the phrase <span class="italic font-normal">"Tena Tyaktena Bhunjīthā"</span> mean?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q2" value="a" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Starve yourself and abandon all food and shelter</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q2" value="b" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Protect and enjoy life through the spirit of detachment</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q2" value="c" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Accumulate as much wealth as possible through trade</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="p-5 bg-warmBg rounded-xl border border-amber-100 space-y-3">
+                    <h3 class="font-bold text-slateDark text-base">3. How long does Mantra 2 suggest a person should wish to live while performing righteous duties?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q3" value="a" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>A hundred years (śatam samāḥ)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q3" value="b" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>As briefly as possible to escape rebirth</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q3" value="c" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Fifty years of study followed by isolation</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="p-5 bg-warmBg rounded-xl border border-amber-100 space-y-3">
+                    <h3 class="font-bold text-slateDark text-base">4. According to Mantra 2, what happens to action when performed with proper awareness?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q4" value="a" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Action binds the soul forever in suffering</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q4" value="b" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Action does not cling or stain the human being (na karma lipyate nare)</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q4" value="c" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Action becomes unnecessary for spiritual seekers</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="p-5 bg-warmBg rounded-xl border border-amber-100 space-y-3">
+                    <h3 class="font-bold text-slateDark text-base">5. In Mantra 3, who are referred to as <span class="italic font-normal">ātmahanas</span> (slayers of the Self)?</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q5" value="a" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Those who practice rigorous meditation</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q5" value="b" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Those who are ignorant of their true spiritual nature</span>
+                        </label>
+                        <label class="flex items-center space-x-3 text-sm text-slate-700 cursor-pointer p-2 rounded hover:bg-white">
+                            <input type="radio" name="q5" value="c" class="text-saffron-600 focus:ring-saffron-500">
+                            <span>Those who perform daily ritual sacrifices</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Submit Button & Results Box -->
+                <div class="pt-4 text-center">
+                    <button type="button" id="submit-quiz" class="px-8 py-3.5 bg-saffron-600 hover:bg-saffron-700 text-white font-medium rounded-xl shadow-md transition-all">
+                        Submit Answers & View Score
+                    </button>
+                </div>
+
+                <div id="quiz-result" class="hidden mt-6 p-6 rounded-xl text-center border">
+                    <!-- Dynamic feedback inserted here -->
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-8 border-t border-stone-800 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-full bg-saffron-600 flex items-center justify-center text-white font-bold text-sm">
+                    ॐ
+                </div>
+                <span class="font-cinzel font-bold text-white tracking-tight">Ishavasya Upanishad Study Portal</span>
+            </div>
+            <p class="text-xs text-slate-400 text-center md:text-left">
+                Module 1 Study Guide • Free open educational resource.
+            </p>
+            <div class="flex space-x-6 text-sm text-slate-400">
+                <a href="index.html" class="hover:text-saffron-500 transition-colors">Home</a>
+                <a href="#quiz" class="hover:text-saffron-500 transition-colors">Quiz</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quiz Evaluation Script -->
+    <script>
+        const menuButton = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMobileMenu = () => {
+            mobileMenu.classList.add("hidden");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.setAttribute("aria-label", "Open navigation menu");
+        };
+
+        menuButton.addEventListener("click", () => {
+            const isExpanded = menuButton.getAttribute("aria-expanded") === "true";
+            mobileMenu.classList.toggle("hidden", isExpanded);
+            menuButton.setAttribute("aria-expanded", String(!isExpanded));
+            menuButton.setAttribute("aria-label", isExpanded ? "Open navigation menu" : "Close navigation menu");
+        });
+        mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMobileMenu));
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeMobileMenu();
+        });
+
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'a',
+            q4: 'b',
+            q5: 'b'
+        };
+
+        document.getElementById('submit-quiz').addEventListener('click', () => {
+            let score = 0;
+            let answeredCount = 0;
+
+            for (let q in correctAnswers) {
+                const selected = document.querySelector(`input[name="${q}"]:checked`);
+                if (selected) {
+                    answeredCount++;
+                    if (selected.value === correctAnswers[q]) {
+                        score++;
+                    }
+                }
+            }
+
+            const resultBox = document.getElementById('quiz-result');
+            resultBox.classList.remove('hidden');
+
+            if (answeredCount < 5) {
+                resultBox.className = "mt-6 p-6 rounded-xl text-center border bg-amber-50 border-amber-300 text-amber-800";
+                resultBox.innerHTML = `<h4 class="font-bold text-lg mb-1">Please answer all 5 questions!</h4><p class="text-sm">You have answered ${answeredCount} out of 5 questions.</p>`;
+                return;
+            }
+
+            if (score === 5) {
+                resultBox.className = "mt-6 p-6 rounded-xl text-center border bg-emerald-50 border-emerald-300 text-emerald-800";
+                resultBox.innerHTML = `<h4 class="font-bold text-lg mb-1">🌟 Excellent! Perfect Score (5/5)</h4><p class="text-sm">You have mastered the core principles of Module 1 (Mantras 1–3)!</p>`;
+            } else if (score >= 3) {
+                resultBox.className = "mt-6 p-6 rounded-xl text-center border bg-amber-50 border-amber-300 text-amber-800";
+                resultBox.innerHTML = `<h4 class="font-bold text-lg mb-1">👍 Good Job! Score: ${score}/5</h4><p class="text-sm">You have a solid understanding. Review the mantras above to brush up on missed concepts.</p>`;
+            } else {
+                resultBox.className = "mt-6 p-6 rounded-xl text-center border bg-rose-50 border-rose-300 text-rose-800";
+                resultBox.innerHTML = `<h4 class="font-bold text-lg mb-1">📖 Score: ${score}/5</h4><p class="text-sm">Keep studying! Re-read the Sanskrit commentary and word meanings for Mantras 1–3.</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
